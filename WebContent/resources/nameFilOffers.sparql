@@ -1,0 +1,8 @@
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+PREFIX cv:<http://kaste.lv/~captsolo/semweb/resume/cv.rdfs#>
+SELECT ?s WHERE {
+  ?s rdf:type foaf:Person .
+  ?s vcard:locality ?locality .
+  ?s cv:jobTitle ?contract .
+}

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xml:base="http://kmm.lboro.ac.uk/ecos/1.0#">
+
+<rdfs:Class rdf:ID="AudioVisual">
+<rdfs:subClassOf>
+<rdfs:Class rdf:ID="Carrera"/>
+</rdfs:subClassOf>
+</rdfs:Class>
+<rdfs:Class rdf:ID="Foto">
+<rdfs:subClassOf rdf:resource="#AudioVisual"/>
+</rdfs:Class><rdfs:Class rdf:ID="Video">
+<rdfs:subClassOf rdf:resource="#AudioVisual"/>
+</rdfs:Class><rdfs:Class rdf:ID="Photo_editing">
+<rdfs:subClassOf rdf:resource="#Foto"/>
+</rdfs:Class><rdfs:Class rdf:ID="Video_rendering">
+<rdfs:subClassOf rdf:resource="#Video"/>
+</rdfs:Class><rdfs:Class rdf:ID="Ingeneria">
+<rdfs:subClassOf rdf:resource="#Carrera"/>
+</rdfs:Class><rdfs:Class rdf:ID="Informatica">
+<rdfs:subClassOf rdf:resource="#Ingeneria"/>
+</rdfs:Class><rdfs:Class rdf:ID="Lenguaje_programacion">
+<rdfs:subClassOf rdf:resource="#Informatica"/>
+</rdfs:Class><rdfs:Class rdf:ID="C">
+<rdfs:subClassOf rdf:resource="#Lenguaje_programacion"/>
+</rdfs:Class><rdfs:Class rdf:ID="Java">
+<rdfs:subClassOf rdf:resource="#Lenguaje_programacion"/>
+</rdfs:Class><rdfs:Class rdf:ID="Web">
+<rdfs:subClassOf rdf:resource="#Informatica"/>
+</rdfs:Class><rdfs:Class rdf:ID="HTML">
+<rdfs:subClassOf rdf:resource="#Web"/>
+</rdfs:Class><rdfs:Class rdf:ID="HTML5">
+<rdfs:subClassOf rdf:resource="#Web"/>
+</rdfs:Class><rdfs:Class rdf:ID="Javascript">
+<rdfs:subClassOf rdf:resource="#Web"/>
+</rdfs:Class><rdfs:Class rdf:ID="jQuery">
+<rdfs:subClassOf rdf:resource="#Web"/>
+</rdfs:Class><rdfs:Class rdf:ID="Knockout">
+<rdfs:subClassOf rdf:resource="#Web"/>
+</rdfs:Class><rdfs:Class rdf:ID="PHP">
+<rdfs:subClassOf rdf:resource="#Web"/>
+</rdfs:Class><rdfs:Class rdf:ID="Sistemas_operativos">
+<rdfs:subClassOf rdf:resource="#Informatica"/>
+</rdfs:Class><rdfs:Class rdf:ID="Linux">
+<rdfs:subClassOf rdf:resource="#Sistemas_operativos"/>
+</rdfs:Class><rdfs:Class rdf:ID="Windows">
+<rdfs:subClassOf rdf:resource="#Sistemas_operativos"/>
+</rdfs:Class><rdfs:Class rdf:ID="Telecomunicaciones">
+<rdfs:subClassOf rdf:resource="#Ingeneria"/>
+</rdfs:Class><rdfs:Class rdf:ID="Signal_procesing">
+<rdfs:subClassOf rdf:resource="#Telecomunicaciones"/>
+</rdfs:Class><rdfs:Class rdf:ID="Software_Engineering">
+<rdfs:subClassOf rdf:resource="#Telecomunicaciones"/>
+</rdfs:Class><rdfs:Class rdf:ID="Tecnologia_movil">
+<rdfs:subClassOf rdf:resource="#Telecomunicaciones"/>
+</rdfs:Class><rdfs:Class rdf:ID="iOS">
+<rdfs:subClassOf rdf:resource="#Tecnologia_movil"/>
+</rdfs:Class><rdfs:Class rdf:ID="Android">
+<rdfs:subClassOf rdf:resource="#Tecnologia_movil"/>
+</rdfs:Class><rdfs:Class rdf:ID="Mobile_developement">
+<rdfs:subClassOf rdf:resource="#Tecnologia_movil"/>
+</rdfs:Class><rdfs:Class rdf:ID="Otros">
+<rdfs:subClassOf rdf:resource="#Telecomunicaciones"/>
+</rdfs:Class><rdfs:Class rdf:ID="Semantic_technologies">
+<rdfs:subClassOf rdf:resource="#Otros"/>
+</rdfs:Class><rdfs:Class rdf:ID="Sparql">
+<rdfs:subClassOf rdf:resource="#Otros"/>
+</rdfs:Class><rdfs:Class rdf:ID="Scrum">
+<rdfs:subClassOf rdf:resource="#Otros"/>
+</rdfs:Class><rdfs:Class rdf:ID="Server_administration">
+<rdfs:subClassOf rdf:resource="#Otros"/>
+</rdfs:Class><rdfs:Class rdf:ID="Politica">
+<rdfs:subClassOf rdf:resource="#Carrera"/>
+</rdfs:Class><rdfs:Class rdf:ID="Social_skills">
+<rdfs:subClassOf rdf:resource="#Politica"/>
+</rdfs:Class><rdfs:Class rdf:about="#Carrera">
+<rdfs:subClassOf>
+<rdfs:Class rdf:ID="IT_Cats"/>
+</rdfs:subClassOf>
+</rdfs:Class>
+<rdfs:Property rdf:ID="competenceLevel">
+    <rdfs:range rdf:resource="#Skill_level"/>
+  </rdfs:Property>
+
+  <rdfs:Class rdf:about="#beginner">
+    <rdfs:subClassOf rdf:resource="#Skill_level"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="#intermediate">
+    <rdfs:subClassOf rdf:resource="#beginner"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="#expert">
+    <rdfs:subClassOf rdf:resource="#intermediate"/>
+  </rdfs:Class>
+</rdf:RDF>
+
+
+
+
+
+

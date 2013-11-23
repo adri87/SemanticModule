@@ -1,0 +1,6 @@
+PREFIX cv:<http://kaste.lv/~captsolo/semweb/resume/cv.rdfs#>
+SELECT ?n ?l WHERE {
+  <Resource> cv:hasSkill ?aux .
+  ?aux cv:skillName ?n .
+  ?aux cv:skillLevel ?l
+}
